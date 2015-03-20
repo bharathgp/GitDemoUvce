@@ -13,6 +13,11 @@ namespace Fibonacci
             PrintNFiboNumber(4);
         }
 
+        /// <summary>
+        /// Returns Nth fibonacci number
+        /// </summary>
+        /// <param name="range"></param>
+        /// <returns></returns>
         public static int NthFiboNumber(int range)
         {
            if (range <=1)
