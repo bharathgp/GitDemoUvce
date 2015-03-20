@@ -15,21 +15,14 @@ namespace Fibonacci
 
         public static int NthFiboNumber(int range)
         {
-            int f1, f2, f;
-            f1 = 1;
-            f2 = 1;
-            f = 1;
-            if (range <= 1)
-            {
-                return f;
-            }
-            for (int i = 2; i <= range; i++)
-            {
-                f = f1 + f2;
-                f1 = f2;
-                f2 = f;
-            }
-            return f;
+           if (range <=1)
+           {
+               return 1;
+           }
+            else
+           {
+               return NthFiboNumber(range - 1) + NthFiboNumber(range - 2);
+           }
           
         }
 
